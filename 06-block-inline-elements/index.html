@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Sandbox</title>
+  </head>
+  <body>
+    <h1>HTML & CSS Sandbox - Block vs Inline</h1>
+    <style>
+      a {
+        background-color: #eee;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+
+        /* Doesn't work with inline  */
+        margin-bottom: 4rem;
+
+        /* But it can turn into block-level element */
+        /* display: block; */
+      }
+      p {
+        background-color: #aaa;
+        padding: 1rem;
+        margin-bottom: 4rem;
+      }
+    </style>
+
+    <!-- Inline Elements -->
+    <a href="#">Link One</a>
+    <a href="#">Link Two</a>
+
+    <!-- Block-level Elements -->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <!-- ---------- -->
+
+    <!-- Inline Elements
+    [||||||||||]
+    -Only sufficient width required.
+    -Don't start with a new line.
+    -Allow other inline elements to sit behind.
+    -Don't have top and bottom margin -->
+    <!-- <span></span>
+    <a href=""></a>
+    <img src="" alt="" />
+    <button></button>
+    <input type="text" />
+    <label for=""></label>
+    <small></small>
+    <strong></strong>
+    <em></em>
+    <mark></mark>
+    <ins></ins>
+    <del></del>
+    <sub></sub>
+    <sup></sup> -->
+
+    <!-- ---------- -->
+
+    <!-- Block Elements
+    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+    -Full width irrespective of their sufficiency.
+    -Always start with a line.
+    -Don't allow other elements to sit behind.
+    -Have top and bottom margin. -->
+    <!-- <div></div>
+    <p></p>
+    <h1></h1>
+    <ul></ul>
+    <ol></ol>
+    <li></li>
+    <table></table>
+    <form action=""></form>
+    <header></header>
+    <footer></footer>
+    <article></article>
+    <aside></aside>
+    <main></main>
+    <blockquote></blockquote>
+    <hr />
+    <pre></pre> -->
+  </body>
+</html>
